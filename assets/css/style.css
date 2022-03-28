@@ -5,21 +5,30 @@
 /* Generic attributes*/
 *{ 
     margin: 0;
+    border: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: white;
+    background-color: rgb(118, 173, 245);
 }
-
+/* background-color: white; */
 
 
 /* Header style */
 header{
     font-size: 54px;
     color: black;
+    margin-top: 3px;
+    margin-bottom: 30px;
 }
 #logo{
-    background-color: white;
+    margin-left: 1px;  
+    margin-bottom: -8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: calc(0.5rem - 1px);
+    border-bottom: none;
 }
 .topnav {
     background-color: var(--backgroundcolor);
@@ -30,7 +39,7 @@ header{
     align-items: center;
     border-style: solid;
     border-width: 2px;
-    border-color: var(--backgroundcolor);
+    border-color: black;
     border-radius: calc(0.25rem - 1px);
    
 }
@@ -78,23 +87,55 @@ header{
 main{
     margin-left: auto;
     margin-right: auto;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    /* padding-left: 0.2rem;
+    padding-right: 0.2rem; */
     width: 100%;
+}
+#portfolio{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: calc(0.5rem - 1px);
+    margin-bottom: 12px;
+    background-color: white; 
+    margin: 0px 10px 0px 10px;
 }
 a{
     text-decoration: none;
 }
-/* Kevin Bugusky's Portfolio */
+/* Section Titles */
 h1{
-      text-align: center;
-      font-size: 44px;
-      padding: 12px;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 48px;
+    padding: 12px;
 }
+/* Media quieries for h1 */
+@media only screen and (max-width: 869px) and (min-width: 600px) {
+    h1{
+        font-size: 48px;
+    }
+}
+@media only screen and (max-width: 599px) and (min-width: 420px) {
+    h1{
+        font-size: 34px;
+    }
+}
+@media only screen and (max-width: 475px) and (min-width: 340px) {
+    h1 {
+        font-size: 24px;
+    }
+  }
+  @media only screen and (max-width: 339px) and (min-width: 1px) {
+    h1 {
+        font-size: 14px;
+    }
+  }
 .cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 60px;
 }
 .card{
     width: 40%;
@@ -142,4 +183,79 @@ h1{
 .repo:hover{
     background-color: var(--backgroundcolor);
     color:black;
+}
+
+
+
+
+/* About me section */
+#about-me{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: calc(0.5rem - 1px);
+    margin: 50px 10px 50px 10px;
+    background-color: white;
+}
+.about-me-row {
+    display: flex;
+    align-items: space-between;
+    background-color: var(--color2);
+    outline-offset: -5px;
+    outline-width: 4px;
+    outline-color: var(--outline);
+  }
+.about-me-description p{
+    padding: 4px 4px 4px 8px;
+    font-size:2.5vmax; 
+  }
+.about-me-img{
+    padding: 2% 2% 1% 4%;
+    flex: 1 12%;
+    max-width: 40%;
+    border-radius: 10px;
+}
+/* Media quieries  */
+@media screen and (max-width: 500px) {
+  .about-me-img{
+    align-self: flex-end;
+    width: auto;
+    margin: 0px;
+  }
+  .about-me-row{
+    display:block;
+  }
+  .about-me-img{
+    padding: 0px;
+  }
+}
+
+
+
+ /* Contact me style */
+ #contact-me{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: calc(0.5rem - 1px);
+    margin: 50px 10px 50px 10px;
+    background-color: white;
+ }
+ .contact-me-row {
+    display: flex;
+    align-items: space-between;
+    background-color: var(--color1);
+    border: 0.5rem outset var(--color2);
+  }
+.contact-me-row ul{ /* nav words */
+    color: var(--outline);
+    font-family:Arial, Helvetica, sans-serif; 
+    display: flex;
+    align-items:stretch;
+    gap: 1.75em;
+    font-size: 28px;
+    list-style:none;
+    flex-wrap: wrap;
+    text-shadow: .5px .5px var(--outline);
+    padding: 20px 5px 0px 5px;
 }
