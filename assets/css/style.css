@@ -61,12 +61,12 @@ header{
 /* Media quieries for topnavbar */
 @media only screen and (max-width: 869px) and (min-width: 600px) {
     .topnav{
-        font-size: 34px;
+        font-size: 28px;
     }
 }
 @media only screen and (max-width: 599px) and (min-width: 420px) {
     .topnav{
-        font-size: 24px;
+        font-size: 22px;
     }
 }
 @media only screen and (max-width: 475px) and (min-width: 340px) {
