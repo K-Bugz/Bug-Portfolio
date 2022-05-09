@@ -1,6 +1,8 @@
 # Bug-Portfolio
 A repo to demonstrate my coding abilities!!!!
 
+Deployed site: https://k-bugz.github.io/Bug-Portfolio/
+
 As a developer, I want to create a portfolio so that I can show my skills and knowledge to the future employers.
 Description
 This is a showcase of my skills and knowledge I have acquired. My portfolio is created using ReactJS and deployed to the gh-pages.
